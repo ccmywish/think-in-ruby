@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./RubyGems.svg">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.46/dist/themes/base.css">
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.46/dist/shoelace.js"></script>
+  <link rel="icon" href="./Ruby-half-filled.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
 
   <title>Think in Ruby</title>
 </head>
@@ -17,51 +17,62 @@
     display: flex;
   }
 
+  a:visited {color: inherit;}
   p {
     font-weight: bolder;
-    font-size: xx-large;
+    /* font-size: large; */
     color: #E98763
   }
 
-  a {
-    color: #CC342D
+  h1 a { color: #CC342D; text-decoration-line: underline; }
+  h1 a:visited { color: #CC342D; }
+  h1 a:hover { color: #E98763;}
+  
+  .support {
+    margin-left: 1%; 
+    background: #CC342D url(https://www.ruby-lang.org/images/download-ruby-arrow@2x.png) no-repeat 8px center;
+    background-size: 30px 25px;
+    padding: 8px 20px 8px 45px;
+    color: white;
+    border: 2px solid #9b1c16;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 #9b1c16;
   }
-
-  .left-box {
-    margin-top: 1% ;
-  }
-  .middle-box {
-    width: 5% ;
-  }
-  .right-box {
-    width: 30%;
-    margin-top: 11%;
-    text-align: center;
-  }
+  a.support:hover { color: white;}
 
 </style>
 
 <body>
+  
+  <header>
+    <h1> 
+      Think in <a href="https://www.ruby-lang.org">Ruby</a> 
+      <span><img src="./Ruby-lang.png" width="8%" height="8%"></span>
+    </h1>
+  </header>
 
-  <div align="center" class="left-box"> 
+  <main>
 
-    <sl-image-comparer>
-      <img slot="before" src="./kittens-bw.jpeg">
-      <img slot="after" src="kittens-cl.jpeg">
-    </sl-image-comparer>
-  </div>
-
-  <div class="middle-box">
+    <h2>Ruby in a nutshell</h2>
     
-  </div>
+    <h2>Hack</h2>
 
-  <div class="right-box">
-    <p> 
-      Use <a href="https://www.ruby-lang.org/">Ruby</a>
-      <span><img src="./Ruby.png" width="12%" height="12%"></span>
-    </p>
-    <p> to make the World colorfu! </p>
-  </div>
+    <h2>Diversification</h2>
+
+    <h2>Community</h2>
+
+    <h2>Conference</h2>
+
+    <h2>Support</h2>
+
+    <h2>Book</h2>
+
+  </main>
+
+  <footer>
+    <p> <a href="https://www.ruby-lang.org/en/downloads/" class="support"> Make the world colorfu! </a></p> 
+  </footer>
 
 </body>
+
 </html>
